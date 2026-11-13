@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZKSSS BRepDraft-AI | B-Rep Geometric AI for Automated CAD Part Recognition, View Projection &amp; Annotation</title>
+    <meta
+      name="description"
+      content="ZKSSS CAD Geometric AI Team develops B-Rep native deep learning and computational geometry algorithms for AI part recognition, rapid 2D view projection, and automated engineering annotation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0"
+      rel="stylesheet"
+    />
+        <link rel="icon" type="image/svg+xml" href="/assets/zksss-logo.svg?v=20261111" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=20261111" />
+    <link rel="shortcut icon" href="/favicon.ico?v=20261111" />
+    <link rel="apple-touch-icon" href="/favicon.png?v=20261111" />
+        <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ZKSSS BRepDraft-AI" />
+    <meta property="og:title" content="ZKSSS BRepDraft-AI | 3D B-Rep Geometric AI &amp; Automated CAD Drafting" />
+    <meta property="og:description" content="B-Rep native deep learning and computational geometry algorithms for CAD part recognition, rapid 2D view projection, and automated GD&amp;T annotation." />
+    <meta property="og:url" content="https://zksss-edu.com/" />
+    <meta property="og:image" content="https://zksss-edu.com/favicon.png?v=20261111" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <img src="assets/zksss-logo.svg" alt="" aria-hidden="true" />
+        <span>ZKSSS · BRepDraft-AI</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#contributions">Core Capabilities</a>
+        <a href="#architecture">Algorithm Pipeline</a>
+        <a href="#applications">Drafting Modules</a>
+        <a href="#results">Benchmarks</a>
+        <a href="#citation">Publications</a>
+        <a href="#contact">Team</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+        Dark
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-bg-animation" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <span class="bg-token cad-bg">3D B-Rep</span>
+          <span class="bg-token text-bg">Fast Projection</span>
+          <span class="bg-token image-bg">Auto GD&amp;T</span>
+          <span class="bg-node node-one"></span>
+          <span class="bg-node node-two"></span>
+          <span class="bg-node node-three"></span>
+          <span class="bg-node node-four"></span>
+          <svg viewBox="0 0 1200 620" preserveAspectRatio="none">
+            <path d="M120 420 C320 260 470 230 610 310 C760 395 910 320 1080 185" />
+            <path d="M170 150 C365 235 485 315 610 310 C760 300 850 370 1030 455" />
+            <path d="M245 500 C410 470 515 395 610 310 C705 220 835 155 1020 120" />
+          </svg>
+        </div>
+        <h1>BRepDraft-AI</h1>
+        <p class="subtitle">B-Rep Native Geometric AI for Rapid CAD Part Recognition, 2D View Projection &amp; Smart Annotation</p>
+        <div class="authors">
+          <a href="#applications">AI Part &amp; Feature Recognition Group</a>
+          <span>·</span>
+          <a href="#applications">AI Rapid View Projection &amp; HLR Team</a>
+          <span>·</span>
+          <a href="#applications">AI Automated Dimensioning &amp; GD&amp;T Lab</a>
+        </div>
+        <p class="affiliations">
+          ZKSSS CAD Geometric Algorithm &amp; Automated Drafting R&amp;D Team · zksss-edu.com
+        </p>
+        <p class="author-note">Founder &amp; Principal Lead: <a href="mailto:owner@zksss-edu.com" style="text-decoration: underline;">owner@zksss-edu.com</a></p>
+
+        <div class="resource-links" aria-label="Project resources">
+          <a href="#architecture" data-tooltip="3D B-Rep to 2D Drawing Pipeline">
+            <span class="material-symbols-rounded" aria-hidden="true">account_tree</span>
+            Algorithm Pipeline
+          </a>
+          <a href="#applications" data-tooltip="Part Recognition, Projection &amp; Annotation">
+            <span class="material-symbols-rounded" aria-hidden="true">precision_manufacturing</span>
+            Core Modules
+          </a>
+          <a href="#results" data-tooltip="Industrial Drafting Speed &amp; Accuracy">
+            <span class="material-symbols-rounded" aria-hidden="true">analytics</span>
+            Benchmarks
+          </a>
+          <a href="mailto:owner@zksss-edu.com" data-tooltip="Founder &amp; Organization Inquiries">
+            <span class="material-symbols-rounded" aria-hidden="true">mail</span>
+            owner@zksss-edu.com
+          </a>
+        </div>
+
+        <div class="contrastive-banner" aria-label="Animated B-Rep to 2D drawing pipeline diagram">
+          <svg class="banner-lines" viewBox="0 0 1000 260" aria-hidden="true">
+            <path class="align-path path-cad" d="M180 130 C300 58 390 58 500 130" />
+            <path class="align-path path-text" d="M820 62 C690 62 610 78 500 130" />
+            <path class="align-path path-image" d="M820 198 C690 198 610 182 500 130" />
+          </svg>
+          <div class="banner-node cad-node">
+            <span>AI Part Recognition</span>
+            <strong>3D B-Rep Feature GNN</strong>
+          </div>
+          <div class="banner-node text-node">
+            <span>AI Rapid Projection</span>
+            <strong>Optimal Views + Section HLR</strong>
+          </div>
+          <div class="banner-node image-node">
+            <span>AI Smart Annotation</span>
+            <strong>Collision-Free Dim &amp; GD&amp;T</strong>
+          </div>
+          <div class="banner-core">
+            <span>B-Rep Drafting Engine</span>
+          </div>
+          <i class="flow-dot dot-cad"></i>
+          <i class="flow-dot dot-text"></i>
+          <i class="flow-dot dot-image"></i>
+          <div class="banner-loss">
+            <span>exact 3D B-Rep Face/Edge &harr; 2D Curve topological traceability</span>
+            <span>zero-overlap ISO / ASME / GB production drawing sheets</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <p class="section-kicker">Overview</p>
+        <h2>Native B-Rep geometric intelligence for instant 3D-to-2D engineering drawings.</h2>
+        <p class="section-copy">
+          Manual 2D detailing from 3D CAD models—selecting views, cutting sections, placing dimensions, and resolving text collisions—consumes up to 40% of mechanical design cycles. Our team develops <strong>B-Rep native graph neural networks</strong> and <strong>computational geometry kernels</strong> that operate directly on exact faces, loops, coedges, and analytic/NURBS surfaces to deliver one-click part recognition, rapid multi-view projection, and collision-free engineering annotation.
+        </p>
+        <div class="hero-stats">
+          <article><strong>98.4%</strong><span>3D B-Rep part &amp; machining feature accuracy</span></article>
+          <article><strong>&lt; 1.8s</strong><span>complete multi-view HLR projection per part</span></article>
+          <article><strong>94.2%</strong><span>ready-to-release auto-dimensioning rate</span></article>
+          <article><strong>12&times;</strong><span>faster 3D-to-2D CAD drafting throughput</span></article>
+        </div>
+      </section>
+
+      <section id="contributions" class="section contributions-section">
+        <p class="section-kicker">Core Capabilities</p>
+        <h2>What Our B-Rep AI Drafting Engine Delivers</h2>
+        <p class="section-copy">
+          Purpose-built geometric deep learning and constraint optimization algorithms for industrial CAD drafting automation.
+        </p>
+        <div class="dreamcad-contrib-grid">
+          <article class="dreamcad-contrib-card">
+            <h3>AI Part &amp; Feature Recognition</h3>
+            <p>
+              Coedge-level B-Rep Graph Transformers classify mechanical part families and segment intersecting machining features (holes, counterbores, threads, slots, ribs, sheet-metal bends) directly on STEP solids.
+            </p>
+            <a href="#applications" aria-label="View AI Part Recognition">
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+            </a>
+          </article>
+          <article class="dreamcad-contrib-card featured">
+            <h3>AI Rapid View Projection</h3>
+            <p>
+              Automatically determines optimal front orientation, necessary orthographic views, section cutting planes, and local detail views with high-speed analytical B-Rep Hidden-Line Removal (HLR).
+            </p>
+            <a href="#applications" aria-label="View AI Rapid Projection">
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+            </a>
+          </article>
+          <article class="dreamcad-contrib-card">
+            <h3>AI Rapid Dimensioning &amp; GD&amp;T</h3>
+            <p>
+              Generates complete, non-redundant baseline/chain dimensions, hole callouts, surface finish symbols, and GD&amp;T frames using topological DOF analysis and MILP collision-free layout.
+            </p>
+            <a href="#applications" aria-label="View AI Smart Annotation">
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+            </a>
+          </article>
+          <article class="dreamcad-contrib-card">
+            <h3>Associative B-Rep Kernel</h3>
+            <p>
+              Preserves exact analytical arc/circle geometry and bi-directional 3D-to-2D topological IDs across STEP, Parasolid, OpenCASCADE, AutoCAD DXF/DWG, and native 3D CAD systems.
+            </p>
+            <a href="#architecture" aria-label="View Algorithm Pipeline">
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="architecture" class="section architecture-section">
+        <p class="section-kicker">Algorithm Pipeline</p>
+        <h2>From 3D B-Rep Solid to Annotated 2D Drawing</h2>
+
+        <div class="architecture-stages">
+          <article class="architecture-stage">
+            <div class="architecture-stage-copy">
+              <span>Stage 1 · AI 3D B-Rep Understanding</span>
+              <h3>Hierarchical Coedge-GNN for Part &amp; Feature Recognition</h3>
+              <p>
+                Given an input 3D B-Rep model, our geometric kernel extracts the exact Face-Loop-Coedge-Vertex adjacency graph alongside surface intrinsics (planes, cylinders, cones, tori, NURBS) and dihedral convexity. A B-Rep Graph Transformer identifies the part family, manufacturing features, symmetry axes, and primary/secondary/tertiary functional datum surfaces.
+              </p>
+            </div>
+            <figure class="architecture-figure">
+              <img src="assets/stage1-brep-recognition.svg" alt="Stage 1: 3D B-Rep Coedge-GNN for AI part classification and machining feature recognition" />
+            </figure>
+          </article>
+
+          <article class="architecture-stage">
+            <div class="architecture-stage-copy">
+              <span>Stage 2 · AI View Synthesis &amp; Smart Annotation</span>
+              <h3>Optimal View Projection, Analytical HLR &amp; Collision-Free Dimensioning</h3>
+              <p>
+                Guided by the recognized 3D feature graph and datum hierarchy, the view planner synthesizes orthographic, section, and detail views that expose every internal and external feature. Finally, our topological degree-of-freedom (DOF) dimensioning engine and Mixed-Integer Linear Programming (MILP) layout solver place all dimensions, leaders, and GD&amp;T tolerances with zero visual overlap.
+              </p>
+            </div>
+            <figure class="architecture-figure">
+              <img src="assets/stage2-projection-annotation.svg" alt="Stage 2: AI optimal view projection, analytical HLR, and collision-free dimensioning" />
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section id="applications" class="section applications-section">
+        <p class="section-kicker">Drafting Modules</p>
+        <h2>Three core AI geometric engines powering rapid CAD drawing production.</h2>
+
+        <div class="applications-stack">
+          <article class="application-slide">
+            <div class="slide-index">01</div>
+            <div>
+              <h3>AI Part &amp; Machining Feature Recognition</h3>
+              <p>
+                Drafting rules depend heavily on part semantics: a turned shaft, a milled housing, and a bent sheet-metal bracket require completely different view layouts and dimensioning schemes. Our B-Rep GNN recognizes both global part taxonomy and local machining features in milliseconds.
+              </p>
+              <ul>
+                <li>Classifies 45+ mechanical component families and segments 28 types of interacting machining features.</li>
+                <li>Extracts functional datum surfaces (A, B, C) and bolt-hole pitch circle diameters (PCD) automatically.</li>
+                <li>Detects threads, undercuts, keyways, counterbores, countersinks, and fillet/chamfer chains directly on B-Rep topology.</li>
+              </ul>
+              <div class="experiment-panel">
+                <span>Recognition Benchmark</span>
+                <p>
+                  Evaluated on <span class="metric-highlight">400K+ industrial B-Rep models</span> and multi-feature machining benchmarks with intersecting pockets, holes, and bosses.
+                </p>
+                <div class="experiment-metrics">
+                  <strong>98.4% Feature F1</strong>
+                  <strong>96.8% Datum Acc</strong>
+                  <strong>12ms / Part</strong>
+                </div>
+              </div>
+            </div>
+            <div class="class-pills" aria-hidden="true">
+              <span>stepped shafts</span>
+              <span>flanged housings</span>
+              <span>gearbox covers</span>
+              <span>sheet-metal brackets</span>
+              <span>threaded manifolds</span>
+              <span>counterbore arrays</span>
+            </div>
+          </article>
+
+          <article class="application-slide">
+            <div class="slide-index">02</div>
+            <div>
+              <h3>AI Rapid View Projection &amp; Automated Sectioning</h3>
+              <p>
+                Replaces manual view orientation and section line sketching with an AI view planner coupled to an ultra-fast C++ analytical B-Rep Hidden-Line Removal (HLR) kernel.
+              </p>
+              <ul>
+                <li><strong>Optimal front-view selection:</strong> Maximizes projected contour area and visible feature ratio while minimizing hidden dashed lines.</li>
+                <li><strong>Intelligent sectioning:</strong> Automatically places full, half, offset, or stepped cutting planes through internal bores, ribs, and fluid channels.</li>
+                <li><strong>Analytical vector HLR:</strong> Projects exact 2D circles, circular arcs, and spline curves with automatic hatching, centerlines, and break lines.</li>
+              </ul>
+              <div class="experiment-panel">
+                <span>Projection Kernel</span>
+                <p>
+                  Computes exact visible and hidden curve segments for assemblies with <span class="metric-highlight">10,000+ B-Rep faces</span> in under a second while optimizing multi-view sheet scale.
+                </p>
+                <div class="experiment-metrics">
+                  <strong>99.1% Feature Visibility</strong>
+                  <strong>0.55s Analytical HLR</strong>
+                  <strong>Auto Section A-A</strong>
+                </div>
+              </div>
+            </div>
+            <div class="mini-flow" aria-hidden="true">
+              <span>3D B-Rep Solid</span>
+              <i></i>
+              <span>AI View &amp; Section Planner</span>
+              <i></i>
+              <span>2D Vector Views</span>
+            </div>
+          </article>
+
+          <article class="application-slide">
+            <div class="slide-index">03</div>
+            <div>
+              <h3>AI Rapid Dimensioning, GD&amp;T &amp; Collision-Free Layout</h3>
+              <p>
+                Generates complete, standards-compliant (ISO 129 / ASME Y14.5 / GB/T) 2D engineering annotations with mathematical guarantees against over-dimensioning and text/line collisions.
+              </p>
+              <ul>
+                <li><strong>Topological DOF dimensioning:</strong> Maps 3D feature constraints to 2D views so every manufacturing dimension is placed in its most readable view without redundancy.</li>
+                <li><strong>Smart pattern &amp; hole callouts:</strong> Automatically consolidates repeated features (e.g., <code>6&times; &Oslash;9.0 THRU EQ. SP. ON &Oslash;85 PCD</code>).</li>
+                <li><strong>Combinatorial layout optimization:</strong> Uses force-directed &amp; MILP optimization to arrange stacked baseline dimensions, leader lines, roughness symbols, and GD&amp;T frames with zero overlap.</li>
+              </ul>
+            </div>
+            <div class="generation-benchmark-card" aria-label="Automated annotation benchmark results">
+              <span>Production Impact</span>
+              <h4><span class="metric-highlight">94.2%</span> One-Click Usable Dimensions</h4>
+              <div class="benchmark-list">
+                <div>
+                  <strong>Linear &amp; Baseline Dims</strong>
+                  <span>97.5%</span>
+                </div>
+                <div>
+                  <strong>Hole &amp; Thread Callouts</strong>
+                  <span>98.9%</span>
+                </div>
+                <div>
+                  <strong>Collision-Free Rate</strong>
+                  <span>99.4%</span>
+                </div>
+              </div>
+              <p>Reduces end-to-end 2D drafting time per component from <span class="text-highlight">25 minutes to under 2 minutes</span>.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="results" class="section results-section">
+        <p class="section-kicker">Benchmarks</p>
+        <h2>Quantitative Results on Industrial CAD Drafting Tasks</h2>
+        <p class="section-copy">
+          Evaluated across 5,000 production mechanical components spanning shafts, brackets, blocks, housings, and sheet-metal parts.
+        </p>
+
+        <div class="result-tabs" role="tablist" aria-label="Quantitative result tables">
+          <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab="retrieval">
+            View Projection &amp; Auto-Annotation
+          </button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="zeroshot">
+            3D B-Rep Part &amp; Feature Recognition
+          </button>
+        </div>
+
+        <div class="result-panel active" id="tab-retrieval" role="tabpanel">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Drafting Pipeline</th>
+                  <th>Geometric Input</th>
+                  <th>Feature Visibility (%) &uarr;</th>
+                  <th>Dim Recall / Precision (%) &uarr;</th>
+                  <th>Annotation Collision (%) &darr;</th>
+                  <th>Total Time / Sheet (s) &darr;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rule-Based CAD Template Macros</td>
+                  <td>Bounding Box + Heuristics</td>
+                  <td>76.4</td>
+                  <td>64.2 / 71.0</td>
+                  <td>18.5</td>
+                  <td>4.20</td>
+                </tr>
+                <tr>
+                  <td>Point-Cloud View Net + Greedy Dim</td>
+                  <td>Point Cloud (4096 pts)</td>
+                  <td>82.1</td>
+                  <td>70.8 / 76.5</td>
+                  <td>14.2</td>
+                  <td>3.85</td>
+                </tr>
+                <tr>
+                  <td>Mesh HLR + Force-Directed Placement</td>
+                  <td>Tessellated Triangle Mesh</td>
+                  <td>88.5</td>
+                  <td>79.4 / 83.1</td>
+                  <td>9.6</td>
+                  <td>2.90</td>
+                </tr>
+                <tr class="ours">
+                  <td><strong>ZKSSS BRepDraft-AI (Ours)</strong></td>
+                  <td><strong>Exact 3D B-Rep + Coedge-GNN</strong></td>
+                  <td><strong>99.1</strong></td>
+                  <td><strong>94.2 / 96.5</strong></td>
+                  <td><strong>0.6</strong></td>
+                  <td><strong>1.75</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="result-panel" id="tab-zeroshot" role="tabpanel" hidden>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Recognition Architecture</th>
+                  <th>Representation</th>
+                  <th>Machining Feature F1 (%) &uarr;</th>
+                  <th>Functional Datum Acc (%) &uarr;</th>
+                  <th>Part Family Top-1 (%) &uarr;</th>
+                  <th>Inference Latency (ms) &darr;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>PointNet++ / DGCNN</td>
+                  <td>3D Point Cloud</td>
+                  <td>81.2</td>
+                  <td>74.5</td>
+                  <td>86.4</td>
+                  <td>28.5</td>
+                </tr>
+                <tr>
+                  <td>MVCNN (12-View Depth)</td>
+                  <td>Multi-View 2D Projections</td>
+                  <td>84.6</td>
+                  <td>78.0</td>
+                  <td>89.1</td>
+                  <td>45.0</td>
+                </tr>
+                <tr>
+                  <td>UV-Net Baseline</td>
+                  <td>B-Rep Face Adjacency Graph</td>
+                  <td>92.3</td>
+                  <td>89.1</td>
+                  <td>94.2</td>
+                  <td>16.4</td>
+                </tr>
+                <tr class="ours">
+                  <td><strong>ZKSSS B-Rep Coedge-Transformer (Ours)</strong></td>
+                  <td><strong>Native B-Rep (Face + Edge + Coedge)</strong></td>
+                  <td><strong>98.4</strong></td>
+                  <td><strong>96.8</strong></td>
+                  <td><strong>97.9</strong></td>
+                  <td><strong>11.8</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="citation" class="section citation-section">
+        <p class="section-kicker">Technical Reports</p>
+        <h2>Whitepapers &amp; Algorithm Specifications</h2>
+        <p class="section-copy">
+          Technical reports on B-Rep geometric deep learning, analytical hidden-line removal, and automated engineering annotation from our R&amp;D group.
+        </p>
+        <div class="bibtex-card">
+          <button class="copy-bibtex" type="button" data-copy-target="bibtex-entry">
+            <span class="material-symbols-rounded" aria-hidden="true">content_copy</span>
+            Copy
+          </button>
+          <pre><code id="bibtex-entry">@techreport{zksss2026brepdraftai,
+  title       = {BRepDraft-AI: B-Rep Native Graph Transformers and Combinatorial Solvers for Automated CAD Part Recognition, View Projection, and Smart Dimensioning},
+  author      = {ZKSSS CAD Geometric Algorithm and Automated Drafting Team},
+  year        = {2026},
+  institution = {ZKSSS Geometric Computing Lab},
+  url         = {https://zksss-edu.com}
+}</code></pre>
+        </div>
+        <div class="related-work">
+          <h3>Core Algorithm Stack</h3>
+          <div class="related-links">
+            <a href="#applications">B-Rep Coedge-GNN Feature Recognition</a>
+            <a href="#applications">Entropy-Optimal View &amp; Section Planner</a>
+            <a href="#applications">Exact Analytical B-Rep HLR Kernel</a>
+            <a href="#applications">Topological DOF Auto-Dimensioning</a>
+            <a href="#applications">MILP Collision-Free Annotation Layout</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <p class="section-kicker">Organization &amp; Leadership</p>
+        <h2>Founder &amp; R&amp;D Divisions</h2>
+        <p class="section-copy">
+          Founded to bridge exact 3D B-Rep computational geometry and industrial AI drafting automation. For institutional partnerships, licensing, or official verification, please contact the founder directly at <a href="mailto:owner@zksss-edu.com"><strong>owner@zksss-edu.com</strong></a>.
+        </p>
+        <div class="contact-grid">
+          <article>
+            <h3>Founder &amp; Principal Architect</h3>
+            <p>Organization Lead · B-Rep Geometric AI &amp; CAD Kernel Strategy</p>
+            <div class="contact-links">
+              <a href="mailto:owner@zksss-edu.com">owner@zksss-edu.com</a>
+              <a href="#overview">Official Contact</a>
+            </div>
+          </article>
+          <article>
+            <h3>AI Part &amp; Feature Recognition Group</h3>
+            <p>B-Rep Graph Neural Networks · Machining Feature Extraction · Datum Synthesis</p>
+            <div class="contact-links">
+              <a href="mailto:owner@zksss-edu.com">Module 01 Inquiry</a>
+              <a href="#applications">Details</a>
+            </div>
+          </article>
+          <article>
+            <h3>AI Rapid View Projection &amp; HLR Lab</h3>
+            <p>Optimal Orientation · Smart Section Cutting Planes · Analytical Vector HLR</p>
+            <div class="contact-links">
+              <a href="mailto:owner@zksss-edu.com">Module 02 Inquiry</a>
+              <a href="#applications">Details</a>
+            </div>
+          </article>
+          <article>
+            <h3>AI Smart Dimensioning &amp; GD&amp;T Team</h3>
+            <p>Topological DOF Solver · Hole/Thread Callouts · Zero-Overlap MILP Layout</p>
+            <div class="contact-links">
+              <a href="mailto:owner@zksss-edu.com">Module 03 Inquiry</a>
+              <a href="#applications">Details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-credit">
+      © 2026 ZKSSS CAD Geometric Algorithm &amp; B-Rep Automated Drafting Lab (zksss-edu.com) · Founder &amp; Official Contact: <a href="mailto:owner@zksss-edu.com">owner@zksss-edu.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

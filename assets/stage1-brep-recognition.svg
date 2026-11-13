@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" font-family="Inter, system-ui, sans-serif">
+  <rect width="920" height="320" rx="16" fill="#f8fafc" stroke="#d9e2f1" stroke-width="1.5"/>
+  <rect x="28" y="42" width="240" height="236" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="148" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#173a96">1. EXACT 3D B-REP SOLID</text>
+  <g transform="translate(68, 95)">
+    <polygon points="80,10 145,42 145,112 80,145 15,112 15,42" fill="#edf4ff" stroke="#2f5eea" stroke-width="2"/>
+    <polyline points="15,42 80,74 145,42" fill="none" stroke="#2f5eea" stroke-width="1.8"/>
+    <line x1="80" y1="74" x2="80" y2="145" stroke="#2f5eea" stroke-width="1.8"/>
+    <ellipse cx="80" cy="42" rx="22" ry="11" fill="#ffffff" stroke="#ff8c25" stroke-width="2.2"/>
+    <text x="80" y="168" text-anchor="middle" font-size="11" fill="#586174">Analytic Surfaces + NURBS</text>
+  </g>
+  <path d="M276 160 H324" stroke="#2f5eea" stroke-width="2.5"/>
+  <rect x="332" y="42" width="256" height="236" rx="12" fill="#ffffff" stroke="#2f5eea" stroke-width="2"/>
+  <text x="460" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#173a96">2. B-REP COEDGE-GNN ENCODER</text>
+  <g transform="translate(362, 92)">
+    <rect x="0" y="0" width="196" height="58" rx="8" fill="#edf4ff" stroke="#93c5fd"/>
+    <text x="98" y="24" text-anchor="middle" font-size="12" font-weight="600" fill="#1e3a8a">Face-Loop-Coedge Graph</text>
+    <text x="98" y="44" text-anchor="middle" font-size="11" fill="#475569">G = (F, E, V) + Dihedral Angles</text>
+    <rect x="0" y="72" width="196" height="58" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+    <text x="98" y="96" text-anchor="middle" font-size="12" font-weight="600" fill="#065f46">UV Curvature &amp; Area Tokens</text>
+    <text x="98" y="116" text-anchor="middle" font-size="11" fill="#475569">Cylinder / Plane / Cone / Torus</text>
+    <text x="98" y="158" text-anchor="middle" font-size="11" font-weight="600" fill="#2f5eea">Message Passing &amp; Graph Attention</text>
+  </g>
+  <path d="M596 160 H644" stroke="#2f5eea" stroke-width="2.5"/>
+  <rect x="652" y="42" width="240" height="236" rx="12" fill="#ffffff" stroke="#12ad76" stroke-width="2"/>
+  <text x="772" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#065f46">3. AI PART &amp; FEATURE OUTPUT</text>
+  <g transform="translate(672, 90)">
+    <rect x="0" y="0" width="200" height="42" rx="6" fill="#ecfdf5"/>
+    <text x="12" y="18" font-size="11" font-weight="700" fill="#047857">Part Family Classification</text>
+    <text x="12" y="34" font-size="10.5" fill="#475569">Flanged Housing (Conf: 99.2%)</text>
+    <rect x="0" y="52" width="200" height="42" rx="6" fill="#fff7ed"/>
+    <text x="12" y="70" font-size="11" font-weight="700" fill="#c2410c">Machining Feature Graph</text>
+    <text x="12" y="86" font-size="10.5" fill="#475569">4x Counterbore, Keyway, Thread</text>
+    <rect x="0" y="104" width="200" height="42" rx="6" fill="#eff6ff"/>
+    <text x="12" y="122" font-size="11" font-weight="700" fill="#1d4ed8">Functional Datum Hierarchy</text>
+    <text x="12" y="138" font-size="10.5" fill="#475569">Primary [A] · Secondary [B] · [C]</text>
+  </g>
+</svg>
